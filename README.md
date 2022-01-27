@@ -16,6 +16,7 @@ sudo git clone https://github.com/Francesco-fr/sn.git
 Aller dans le projet puis installer flask
 ```bash
 cd sn
+python3 -m venv venv
 . venv/bin/activate
 pip install Flask
 ```
