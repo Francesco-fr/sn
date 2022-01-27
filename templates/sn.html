@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calculateur</title>
+    <link rel="stylesheet" href="../static/css/all.css">
+    <link rel="stylesheet" href="../static/css/bootstrap4-neon-glow.min.css">
+    <link href="../static/css/rcss.css" rel="stylesheet">
+    <link rel='stylesheet' href='../static/css/hack.min.css'>
+  </head>
+  <body>
+
+<div class="jumbotron bg-transparent mb-0 radius-0">
+  <div class="container">
+      <div class="row">
+        <div class="col-xl-3">
+
+
+          {% if resultinfo %}
+          <div class="card mb-3 text-center">
+            <div class="card-body">
+              <blockquote class="card-blockquote">
+                <h2>Résultat :</h2>
+                <p class="resultinfo">{{ resultinfo }}</p>
+                </blockquote>
+              </div>
+            </div>
+            {% endif %}
+
+
+          <div class="card mb-3 text-center">
+            <div class="card-body">
+              <blockquote class="card-blockquote">
+                <form action="/result/aire" method="get">
+                  <div class="form-group">
+                    <label>Aires</label>
+                    <input class="form-control mb-1" placeholder="Longueur" name="width" required>
+                    <input class="form-control" placeholder="Largeur" name="length" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Calculer</button>
+                </form>
+                </blockquote>
+              </div>
+            </div>
+
+
+        </div>
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
